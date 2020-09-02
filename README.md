@@ -6,43 +6,42 @@ Swagger  :
 
 http://localhost:8080/v2/api-docs
 
+API Enpoints
 
 
-PUT 
-	/api​/employee
-	updateEmployee
+<br/>updateEmployee
+<br/>PUT 
+<br/>Endpoint : /api/employee
 	
+<br/>fetchAllEmployees
+<br/>GET
+<br/>Endpoint : /api/employees/all
+    
 
-GET
-	​/api​/employees​/all
-	fetchAllEmployees
+<br/>findByPlace
+<br/>GET
+<br/>Endpoint : /api/employees/by/place/{place}
 
+<br/>fetchAllSupervisor
+<br/>GET
+<br/>Endpoint : /api/employees/by/supervisor/{id}
 
-GET
-​	/api​/employees​/by​/place​/{place}
-	findByPlace
+<br/>updateEmployeeSalary
+<br/>PUT
+<br/>Endpoint : /api/employees/place/{place}/salary/{percentage}
 
-GET
-​	/api​/employees​/by​/supervisor​/{id}
-	fetchAllSupervisor
+<br/>totalSalaryBySupervisor
+<br/>GET
+<br/>Endpoint : /api​/employees​/salary​/range​/by​/title​/{title}
 
+<br/>totalSalaryByBusinessUnit
+<br/>GET
+<br/>Endpoint : /api​/employees​/salary​/total​/by​/bu​/{bu}
 
-PUT
-​	/api​/employees​/place​/{place}​/salary​/{percentage}
-	updateEmployeeSalary
+<br/>totalSalaryByPlace
+<br/>GET
+<br/>Endpoint : /api​/employees​/salary​/total​/by​/place​/{place}
 
-GET
-​	/api​/employees​/salary​/range​/by​/title​/{title}
-	totalSalaryBySupervisor
-	
-GET
-​	/api​/employees​/salary​/total​/by​/bu​/{bu}
-	totalSalaryByBusinessUnit
-
-GET
-​	/api​/employees​/salary​/total​/by​/place​/{place}
-	totalSalaryByPlace
-
-GET
-​	/api​/employees​/salary​/total​/by​/supervisor​/{supervisor}
-	totalSalaryBySupervisor
+<br/>totalSalaryBySupervisor
+<br/>GET
+<br/>Endpoint : /api​/employees​/salary​/total​/by​/supervisor​/{supervisor}
