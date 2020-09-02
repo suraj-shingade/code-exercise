@@ -1,0 +1,15 @@
+entity Employee {
+   employeeName String,
+   title String,
+   businessUnit String,
+   place String,
+   competencies String,
+   salary Float
+}
+
+relationship OneToOne {
+	Employee {supervisorID} to Employee
+}
+
+paginate * with infinite-scroll
+service all with serviceImpl

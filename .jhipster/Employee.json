@@ -1,0 +1,51 @@
+{
+  "name": "Employee",
+  "fields": [
+    {
+      "fieldName": "employeeName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "businessUnit",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "place",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "competencies",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "salary",
+      "fieldType": "Float"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "employee",
+      "otherEntityRelationshipName": "employee",
+      "relationshipName": "supervisorID",
+      "otherEntityField": "id",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20200901145452",
+  "entityTableName": "employee",
+  "dto": "no",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "CodeExerciseSuraj",
+  "applications": "*",
+  "microserviceName": "CodeExerciseSuraj"
+}
