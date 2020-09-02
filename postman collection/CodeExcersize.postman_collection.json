@@ -1,0 +1,231 @@
+{
+	"info": {
+		"_postman_id": "9b83b4e1-483d-45fc-bd82-ff469e78719e",
+		"name": "CodeExcersize",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Update Salary",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/place/Mumbai/salary/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"place",
+						"Mumbai",
+						"salary",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cache or DB",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/by/place/Mumbai",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"by",
+						"place",
+						"Mumbai"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"businessUnit\": \"string\",\r\n  \"competencies\": \"string\",\r\n  \"employeeName\": \"string\",\r\n  \"id\": 0,\r\n  \"place\": \"string\",\r\n  \"salary\": 0,\r\n  \"title\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employee"
+					]
+				},
+				"description": "This will go into cache and loaded from there"
+			},
+			"response": []
+		},
+		{
+			"name": "supervisors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/by/supervisor/101023",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"by",
+						"supervisor",
+						"101023"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum of Salary By BU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/salary/total/by/bu/QA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"salary",
+						"total",
+						"by",
+						"bu",
+						"QA"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum of Salary By Place",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/salary/total/by/place/hyderabad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"salary",
+						"total",
+						"by",
+						"place",
+						"hyderabad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum of Salary By Supervisor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/salary/total/by/supervisor/101010",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"salary",
+						"total",
+						"by",
+						"supervisor",
+						"101010"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Range of Salary By Title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/salary/range/by/title/UI Developer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"salary",
+						"range",
+						"by",
+						"title",
+						"UI Developer"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
